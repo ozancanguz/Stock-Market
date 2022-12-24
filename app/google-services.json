@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470297290800",
+    "project_id": "stock-market-f2347",
+    "storage_bucket": "stock-market-f2347.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470297290800:android:090dbc031f8eb026fbe5f5",
+        "android_client_info": {
+          "package_name": "com.ozancanguz.stock_market"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470297290800-f8vjlnn5pqshiucn974r55uucdqqade9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCSUMJq9kLQNJWUiUSbYEVmD-fOzVMDeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470297290800-f8vjlnn5pqshiucn974r55uucdqqade9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
