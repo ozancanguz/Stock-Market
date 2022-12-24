@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/goldFragment"
+        android:title="Gold"
+        android:icon="@drawable/gold" />
+
+
+    <item
+        android:id="@+id/cryptoFragment"
+        android:title="Crypto"
+        android:icon="@drawable/crypto" />
+
+    <item
+        android:id="@+id/stockFragment"
+        android:title="Stock"
+        android:icon="@drawable/stock" />
+
+    <item
+        android:id="@+id/parityFragment"
+        android:title="Parity"
+        android:icon="@drawable/parity" />
+
+    <item android:id="@+id/wareFragment"
+        android:title="Ware"
+        android:icon="@drawable/ware2" ></item>
+
+
+
+</menu>

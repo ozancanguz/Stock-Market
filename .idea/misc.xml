@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/fragment_crypto.xml" value="0.20416666666666666" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/fragment_gold.xml" value="0.20416666666666666" />
@@ -10,6 +11,7 @@
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/fragment_parity.xml" value="0.20416666666666666" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/fragment_stock.xml" value="0.20416666666666666" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/fragment_ware.xml" value="0.20416666666666666" />
+        <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

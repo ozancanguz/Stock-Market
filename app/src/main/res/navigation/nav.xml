@@ -3,35 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/goldFragment">
 
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.ozancanguz.stock_market.ui.fragments.login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_goldFragment"
-            app:destination="@id/goldFragment" />
-    </fragment>
     <fragment
         android:id="@+id/goldFragment"
         android:name="com.ozancanguz.stock_market.ui.fragments.gold.GoldFragment"
-        android:label="fragment_gold"
-        tools:layout="@layout/fragment_gold" />
+        android:label="Gold"
+        tools:layout="@layout/fragment_gold" >
+        <action
+            android:id="@+id/action_goldFragment_to_cryptoFragment"
+            app:destination="@id/cryptoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/stockFragment"
         android:name="com.ozancanguz.stock_market.ui.fragments.stock.StockFragment"
-        android:label="fragment_stock"
+        android:label="Stock"
         tools:layout="@layout/fragment_stock" />
     <fragment
         android:id="@+id/parityFragment"
         android:name="com.ozancanguz.stock_market.ui.fragments.parity.ParityFragment"
-        android:label="fragment_parity"
+        android:label="Parity"
         tools:layout="@layout/fragment_parity" />
     <fragment
         android:id="@+id/wareFragment"
         android:name="com.ozancanguz.stock_market.ui.fragments.ware.WareFragment"
-        android:label="fragment_ware"
+        android:label="Ware"
         tools:layout="@layout/fragment_ware" />
+    <fragment
+        android:id="@+id/cryptoFragment"
+        android:name="com.ozancanguz.stock_market.ui.fragments.crypto.CryptoFragment"
+        android:label="Crypto"
+        tools:layout="@layout/fragment_crypto" />
 </navigation>
