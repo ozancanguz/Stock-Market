@@ -14,8 +14,9 @@ import com.google.firebase.ktx.Firebase
 import com.ozancanguz.stock_market.MainActivity
 import com.ozancanguz.stock_market.R
 import com.ozancanguz.stock_market.databinding.ActivityLoginBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_login.*
-
+@AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 

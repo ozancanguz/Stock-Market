@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.ozancanguz.stock_market.R
 import com.ozancanguz.stock_market.databinding.FragmentParityBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ParityFragment : Fragment() {
     private var _binding: FragmentParityBinding? = null
 

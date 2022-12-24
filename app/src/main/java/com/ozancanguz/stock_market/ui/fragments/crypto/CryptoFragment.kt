@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.ozancanguz.stock_market.R
 import com.ozancanguz.stock_market.databinding.FragmentCryptoBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class CryptoFragment : Fragment() {
     private var _binding: FragmentCryptoBinding? = null
 

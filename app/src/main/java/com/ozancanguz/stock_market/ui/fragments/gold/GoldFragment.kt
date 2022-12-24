@@ -12,8 +12,9 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.ozancanguz.stock_market.R
 import com.ozancanguz.stock_market.databinding.FragmentGoldBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class GoldFragment : Fragment() {
     private var _binding: FragmentGoldBinding? = null
 
