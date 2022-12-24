@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_goldFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_goldFragment_to_goldDetails"
+            app:destination="@id/goldDetails" />
     </fragment>
     <fragment
         android:id="@+id/stockFragment"
@@ -42,4 +45,13 @@
         android:name="com.ozancanguz.stock_market.ui.login.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/goldDetails"
+        android:name="com.ozancanguz.stock_market.ui.fragments.gold.GoldDetails"
+        android:label="Gold Details"
+        tools:layout="@layout/fragment_gold_details" >
+        <argument
+            android:name="currentgold"
+            app:argType="com.ozancanguz.stock_market.data.model.gold.Result" />
+    </fragment>
 </navigation>

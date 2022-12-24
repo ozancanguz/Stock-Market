@@ -1,8 +1,11 @@
 package com.ozancanguz.stock_market.data.model.gold
 
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class Result(
     @SerializedName("buying")
     val buying: Double,
@@ -15,11 +18,11 @@ data class Result(
     @SerializedName("name")
     val name: String,
     @SerializedName("rate")
-    val rate: Any,
+    val rate: String,
     @SerializedName("selling")
     val selling: Double,
     @SerializedName("sellingstr")
     val sellingstr: String,
     @SerializedName("time")
     val time: String
-)
+):Parcelable
