@@ -1,54 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="4dp"
     android:layout_marginBottom="4dp"
-    android:background="@color/yellow">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/row_card"
-        android:layout_width="378dp"
-        android:layout_height="169dp"
+        android:id="@+id/favorite_row_cardView"
+        android:layout_width="404dp"
+        android:layout_height="144dp"
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/lightMediumGray"
         app:strokeWidth="1dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="391dp"
-            android:layout_height="184dp"
-            android:background="@color/yellow">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
 
             <ImageView
                 android:id="@+id/gold_img"
-                android:layout_width="198dp"
-                android:layout_height="163dp"
+                android:layout_width="200dp"
+                android:layout_height="0dp"
                 android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.238"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/gold_name"
-                android:layout_width="142dp"
-                android:layout_height="29dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="12dp"
                 android:ellipsize="end"
-                android:textColor="@color/black"
-                android:textSize="25sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+
+                android:maxLines="2"
+
+                android:textColor="@color/darker"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/gold_img"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.425" />
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

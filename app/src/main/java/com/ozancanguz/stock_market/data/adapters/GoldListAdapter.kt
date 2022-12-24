@@ -19,6 +19,7 @@ class GoldListAdapter:RecyclerView.Adapter<GoldListAdapter.GoldViewHolder>() {
 
     fun setData(newData: Gold){
           this.goldPriceList=newData.result
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GoldViewHolder {
@@ -30,7 +31,7 @@ class GoldListAdapter:RecyclerView.Adapter<GoldListAdapter.GoldViewHolder>() {
     override fun onBindViewHolder(holder: GoldViewHolder, position: Int) {
        val currentGold=goldPriceList[position]
         holder.itemView.gold_name.text=currentGold.name
-        holder.itemView.gold_img.setImageResource(R.drawable.gold)
+        holder.itemView.gold_img.setImageResource(R.drawable.backi)
     }
 
     override fun getItemCount(): Int {
