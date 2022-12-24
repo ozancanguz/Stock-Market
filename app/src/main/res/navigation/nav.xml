@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_goldFragment_to_cryptoFragment"
             app:destination="@id/cryptoFragment" />
+        <action
+            android:id="@+id/action_goldFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/stockFragment"
@@ -34,4 +37,9 @@
         android:name="com.ozancanguz.stock_market.ui.fragments.crypto.CryptoFragment"
         android:label="Crypto"
         tools:layout="@layout/fragment_crypto" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.ozancanguz.stock_market.ui.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
 </navigation>
