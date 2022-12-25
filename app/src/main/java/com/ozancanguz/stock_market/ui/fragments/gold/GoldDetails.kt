@@ -31,10 +31,11 @@ class GoldDetails : Fragment() {
     }
 
     private fun updateUi() {
-        binding.detailsImage.setImageResource(R.drawable.backi)
         binding.detailsButing.text="Buying: " +args.currentgold.buyingstr +" TRY"
         binding.detailsSelling.text="Selling : "+args.currentgold.sellingstr + " TRY"
         binding.detailsDateTime.text="Date Time: " +args.currentgold.datetime
+        binding.detailsGoldName.text="Name: "+ args.currentgold.name
+        binding.detailsGoldRate.text="Rate: %" +args.currentgold.rate
     }
 
 

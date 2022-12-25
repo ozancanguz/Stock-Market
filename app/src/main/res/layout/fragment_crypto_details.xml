@@ -5,7 +5,7 @@
     android:id="@+id/GoldDetailseLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bluegreen"
+    android:background="@color/nighBluee"
     tools:context=".ui.fragments.crypto.CryptoDetails">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -31,6 +31,7 @@
         android:text="Description"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +45,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:gravity="center"
+        android:textColor="@color/white"
         android:text="Description"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -60,6 +62,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:gravity="center"
+        android:textColor="@color/white"
         android:text="Description"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -72,6 +75,7 @@
     <TextView
         android:id="@+id/detailsCryptoName"
         android:layout_width="345dp"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
@@ -87,6 +91,7 @@
     <TextView
         android:id="@+id/changeHours"
         android:layout_width="345dp"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
@@ -94,6 +99,7 @@
         android:text="Description"
         android:textSize="20sp"
         android:textStyle="bold"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

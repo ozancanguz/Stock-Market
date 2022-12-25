@@ -34,7 +34,6 @@ class GoldListAdapter:RecyclerView.Adapter<GoldListAdapter.GoldViewHolder>() {
     override fun onBindViewHolder(holder: GoldViewHolder, position: Int) {
        val currentGold=goldPriceList[position]
         holder.itemView.gold_name.text=currentGold.name
-        holder.itemView.gold_img.setImageResource(R.drawable.backi)
 
         holder.itemView.setOnClickListener {
             val action=GoldFragmentDirections.actionGoldFragmentToGoldDetails(currentGold)
