@@ -42,7 +42,11 @@
         android:id="@+id/wareFragment"
         android:name="com.ozancanguz.stock_market.ui.fragments.ware.WareFragment"
         android:label="Ware"
-        tools:layout="@layout/fragment_ware" />
+        tools:layout="@layout/fragment_ware" >
+        <action
+            android:id="@+id/action_wareFragment_to_wareDetails"
+            app:destination="@id/wareDetails" />
+    </fragment>
     <fragment
         android:id="@+id/cryptoFragment"
         android:name="com.ozancanguz.stock_market.ui.fragments.crypto.CryptoFragment"
@@ -101,5 +105,17 @@
         <argument
             android:name="currentParity"
             app:argType="com.ozancanguz.stock_market.data.model.parity.Result" />
+    </fragment>
+    <fragment
+        android:id="@+id/wareDetails"
+        android:name="com.ozancanguz.stock_market.ui.fragments.ware.WareDetails"
+        android:label="Ware Details"
+        tools:layout="@layout/fragment_ware_details" >
+        <action
+            android:id="@+id/action_wareDetails_to_wareFragment"
+            app:destination="@id/wareFragment" />
+        <argument
+            android:name="currentWare"
+            app:argType="com.ozancanguz.stock_market.data.model.ware.Result" />
     </fragment>
 </navigation>
