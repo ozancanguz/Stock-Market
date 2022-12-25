@@ -9,7 +9,6 @@ import com.ozancanguz.stock_market.R
 import com.ozancanguz.stock_market.data.model.gold.Gold
 import com.ozancanguz.stock_market.data.model.gold.Result
 import com.ozancanguz.stock_market.ui.fragments.gold.GoldFragmentDirections
-import kotlinx.android.synthetic.main.fragment_gold_details.view.*
 import kotlinx.android.synthetic.main.goldlist_row_layout.view.*
 
 class GoldListAdapter:RecyclerView.Adapter<GoldListAdapter.GoldViewHolder>() {

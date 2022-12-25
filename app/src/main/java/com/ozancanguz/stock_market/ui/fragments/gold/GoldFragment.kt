@@ -53,8 +53,8 @@ class GoldFragment : Fragment() {
     }
 
     private fun setupRv() {
-        binding.recyclerView.layoutManager=LinearLayoutManager(requireContext())
-        binding.recyclerView.adapter=goldListAdapter
+        binding.goldRecyclerview.layoutManager=LinearLayoutManager(requireContext())
+        binding.goldRecyclerview.adapter=goldListAdapter
     }
 
     private fun observeLiveData() {
