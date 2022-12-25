@@ -19,4 +19,9 @@
     <color name="red">#FF4646</color>
     <color name="yellow">#FFC114</color>
     <color name="green">#00C980</color>
+    <color name="bluejdja">#091f36</color>
+    <color name="grayer"> #262626 </color>
+    <color name="gri">#3f3f3f </color>
+
+
 </resources>
