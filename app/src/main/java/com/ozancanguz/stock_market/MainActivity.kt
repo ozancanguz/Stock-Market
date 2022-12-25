@@ -3,6 +3,7 @@ package com.ozancanguz.stock_market
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -22,6 +23,8 @@ import com.ozancanguz.stock_market.ui.login.LoginActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.custom_toast.*
+
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
@@ -49,6 +52,10 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setupWithNavController(navController)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
+        // for custom toast
+        //var layout=layoutInflater.inflate(R.layout.custom_toast,ll)
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -66,6 +73,11 @@ class MainActivity : AppCompatActivity() {
                 auth.signOut()
               val intent= Intent(this,LoginActivity::class.java)
                 startActivity(intent)
+                Toast(this).apply {
+                    duration=Toast.LENGTH_LONG
+                    setGravity(Gravity.CENTER,0,0)
+                     view=layoutInflater.inflate(R.layout.custom_toast,ll)
+                }.show()
 
 
             }

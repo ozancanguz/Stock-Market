@@ -3,6 +3,7 @@ package com.ozancanguz.stock_market.ui.login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.Toast
 import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.navigation.fragment.findNavController
@@ -16,6 +17,9 @@ import com.ozancanguz.stock_market.R
 import com.ozancanguz.stock_market.databinding.ActivityLoginBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.custom_toast2.*
+import kotlinx.android.synthetic.main.custom_toast3.*
+
 @AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -48,17 +52,22 @@ class LoginActivity : AppCompatActivity() {
                 val password = binding.passwordET.text.toString()
 
                 if (email.isEmpty() || password.isEmpty()) {
-                    Toast.makeText(this, "E-mail or password empty", Toast.LENGTH_LONG).show()
+                    Toast(this).apply {
+                        duration=Toast.LENGTH_LONG
+                        setGravity(Gravity.CENTER,0,0)
+                        view=layoutInflater.inflate(R.layout.custom_toast3,llll)
+                    }.show()
+
                 } else {
 
                     auth.createUserWithEmailAndPassword(email, password).addOnSuccessListener {
 
-                        Snackbar.make(
-                            loginlayout,
-                            "User Created.Click on sign in button",
-                            Snackbar.LENGTH_LONG
-                        )
-                            .show()
+                        Toast(this).apply {
+                            duration=Toast.LENGTH_LONG
+                            setGravity(Gravity.CENTER,0,0)
+                            view=layoutInflater.inflate(R.layout.custom_toast2,lll)
+                        }.show()
+
                     }.addOnFailureListener {
                         Toast.makeText(this, it.localizedMessage, Toast.LENGTH_LONG)
                             .show()
@@ -74,8 +83,12 @@ class LoginActivity : AppCompatActivity() {
             val email = binding.emailET.text.toString()
             val password = binding.passwordET.text.toString()
             if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "E-mail or password empty", Toast.LENGTH_LONG)
-                    .show()
+                Toast(this).apply {
+                    duration=Toast.LENGTH_LONG
+                    setGravity(Gravity.CENTER,0,0)
+                    view=layoutInflater.inflate(R.layout.custom_toast3,llll)
+                }.show()
+
             } else {
 
                 auth.signInWithEmailAndPassword(email, password).addOnSuccessListener {

@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/drawable/round_corners.xml" value="0.135" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/crypto_row_layout.xml" value="0.22" />
+        <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/custom_toast.xml" value="0.20416666666666666" />
+        <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/custom_toast2.xml" value="0.20416666666666666" />
+        <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/custom_toast3.xml" value="0.2384428223844282" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/fragment_crypto.xml" value="0.20416666666666666" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/fragment_crypto_details.xml" value="0.25" />
         <entry key="..\:/RealAndroiApps/StockMarket/app/src/main/res/layout/fragment_gold.xml" value="0.20416666666666666" />
