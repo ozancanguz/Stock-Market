@@ -21,19 +21,19 @@
         app:strokeWidth="1dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/yellow">
+            android:layout_width="394dp"
+            android:layout_height="146dp"
+            android:background="@color/bluegreen">
 
             <ImageView
                 android:id="@+id/crypto_img"
                 android:layout_width="200dp"
                 android:layout_height="0dp"
                 android:scaleType="centerCrop"
+                android:src="@drawable/cripto"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@tools:sample/avatars" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/crypto_name"
@@ -43,9 +43,9 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="12dp"
                 android:ellipsize="end"
+                android:gravity="center"
                 android:textColor="@color/darker"
                 android:textSize="20sp"
-                android:gravity="center"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -55,12 +55,12 @@
             <TextView
 
                 android:id="@+id/crypto_price"
-                android:layout_width="160dp"
-                android:layout_height="26dp"
-                android:text="TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:gravity="center"
+                android:text="TextView"
                 android:textColor="@color/darker"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

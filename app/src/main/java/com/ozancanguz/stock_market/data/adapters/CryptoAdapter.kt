@@ -8,9 +8,8 @@ import com.ozancanguz.stock_market.R
 import com.ozancanguz.stock_market.data.model.crpto.Crypto
 import com.ozancanguz.stock_market.data.model.crpto.Result
 import kotlinx.android.synthetic.main.crypto_row_layout.view.*
-import java.util.concurrent.CyclicBarrier
 
-class CrytpoAdapter:RecyclerView.Adapter<CrytpoAdapter.CrytoViewHolder>() {
+class CryptoAdapter:RecyclerView.Adapter<CryptoAdapter.CrytoViewHolder>() {
 
     var cryptoList= emptyList<Result>()
 
@@ -30,9 +29,9 @@ class CrytpoAdapter:RecyclerView.Adapter<CrytpoAdapter.CrytoViewHolder>() {
 
     override fun onBindViewHolder(holder: CrytoViewHolder, position: Int) {
         val currentCrypto=cryptoList[position]
-        holder.itemView.crypto_img.setImageResource(R.drawable.crypto)
+        holder.itemView.crypto_img.setImageResource(R.drawable.cryptoimg)
         holder.itemView.crypto_name.text=currentCrypto.name
-        holder.itemView.crypto_price.text=currentCrypto.price.toString()+" USD"
+        holder.itemView.crypto_price.text="Current Price:" +currentCrypto.pricestr+ " USD"
     }
 
     override fun getItemCount(): Int {
