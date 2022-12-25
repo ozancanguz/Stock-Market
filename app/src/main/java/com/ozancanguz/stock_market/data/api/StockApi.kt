@@ -12,7 +12,7 @@ interface StockApi {
 
     // get gold price data
     @Headers(
-        "authorization: apikey 2xAW88zA1iemGAxzWMNumI:47IyS3uICCasjqzWaFtxnn",
+        "authorization: apikey 4S9qz1vJllFEUXdg2X6UxT:00p5DeCL7r6zj9xXkIoKmw",
         "content-type: application/json"
     )
     @GET("goldPrice")
@@ -21,7 +21,7 @@ interface StockApi {
 
     // get crypto data
     @Headers(
-        "authorization: apikey 2xAW88zA1iemGAxzWMNumI:47IyS3uICCasjqzWaFtxnn",
+        "authorization: apikey 4S9qz1vJllFEUXdg2X6UxT:00p5DeCL7r6zj9xXkIoKmw",
         "content-type: application/json"
     )
     @GET("cripto")
@@ -30,7 +30,7 @@ interface StockApi {
 
     // get stock data
     @Headers(
-        "authorization: apikey 2xAW88zA1iemGAxzWMNumI:47IyS3uICCasjqzWaFtxnn",
+        "authorization: apikey 4S9qz1vJllFEUXdg2X6UxT:00p5DeCL7r6zj9xXkIoKmw",
         "content-type: application/json"
     )
     @GET("hisseSenedi")
@@ -39,7 +39,7 @@ interface StockApi {
 
     // get parity data
     @Headers(
-        "authorization: apikey 2xAW88zA1iemGAxzWMNumI:47IyS3uICCasjqzWaFtxnn",
+        "authorization: apikey 4S9qz1vJllFEUXdg2X6UxT:00p5DeCL7r6zj9xXkIoKmw",
         "content-type: application/json"
     )
     @GET("parite")
