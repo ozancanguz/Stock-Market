@@ -8,7 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
      <color name="bluegreen">#ebf6f5</color>
-
+    <color name="nightBlue">#2d545e</color>
+<color name="nighBluee">#101357</color>
     <color name="lightGray">#F9F9F9</color>
     <color name="mediumGray">#D1D1D1</color>
     <color name="lightMediumGray">#80D1D1D1</color>

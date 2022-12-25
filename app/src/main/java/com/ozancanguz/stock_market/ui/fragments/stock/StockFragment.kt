@@ -8,7 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.ozancanguz.stock_market.R
+import com.ozancanguz.stock_market.data.adapters.StockListAdapter
 import com.ozancanguz.stock_market.databinding.FragmentStockBinding
 import com.ozancanguz.stock_market.viewmodels.StockViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -21,6 +23,8 @@ class StockFragment : Fragment() {
 
     private val stockViewModel:StockViewModel by viewModels()
 
+    private val stockListAdapter=StockListAdapter()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -32,16 +36,25 @@ class StockFragment : Fragment() {
         // observe live data
         observeLiveData()
 
+        // set up rv
+        setupRv()
 
 
 
         return view
     }
 
+    private fun setupRv() {
+        binding.StockRv.layoutManager=LinearLayoutManager(requireContext())
+        binding.StockRv.adapter=stockListAdapter
+
+    }
+
     private fun observeLiveData() {
         stockViewModel.getStockPrices()
         stockViewModel.stockList.observe(viewLifecycleOwner, Observer {
             Log.d("stockfragment",""+it)
+            stockListAdapter.setData(it)
         })
     }
 

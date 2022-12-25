@@ -15,6 +15,7 @@ class StockListAdapter:RecyclerView.Adapter<StockListAdapter.StockViewHolder>() 
 
     fun setData(newData: Stock){
         this.stockList=newData.result
+        notifyDataSetChanged()
     }
 
     class StockViewHolder(view: View):RecyclerView.ViewHolder(view) {
@@ -30,7 +31,7 @@ class StockListAdapter:RecyclerView.Adapter<StockListAdapter.StockViewHolder>() 
     override fun onBindViewHolder(holder: StockViewHolder, position: Int) {
         val currentStock=stockList[position]
         holder.itemView.stock_text.text=currentStock.text
-        holder.itemView.stock_last_price.text="Last Price: " +currentStock.lastpricestr
+        holder.itemView.stock_last_price.text="Last Price: " +currentStock.lastpricestr+" TRY"
     }
 
     override fun getItemCount(): Int {
