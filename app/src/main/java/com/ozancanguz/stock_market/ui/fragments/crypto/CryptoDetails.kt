@@ -29,11 +29,10 @@ class CryptoDetails : Fragment() {
     }
 
     private fun updateUi() {
-        binding.detailsCryptoImg.setImageResource(R.drawable.cripto)
         binding.detailsCryptoCode.text="Code: "+args.currentCrypto.code
         binding.detailsCryptoChangeDay.text="Change Daily: % "+args.currentCrypto.changeDaystr
         binding.detailsCryptoChangeWeek.text="Change Weekly % " +args.currentCrypto.changeWeekstr
-        binding.detailsCryptoName.text=args.currentCrypto.name
+        binding.detailsCryptoName.text="Name: " +args.currentCrypto.name
         binding.changeHours.text="Change Hoursly: % " +args.currentCrypto.changeHourstr
     }
 

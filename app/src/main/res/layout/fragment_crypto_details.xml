@@ -8,20 +8,18 @@
     android:background="@color/bluegreen"
     tools:context=".ui.fragments.crypto.CryptoDetails">
 
-
-    <ImageView
-        android:id="@+id/details_crypto_img"
-        android:layout_width="399dp"
-        android:layout_height="246dp"
-        android:layout_marginStart="4dp"
-        android:scaleType="centerCrop"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="328dp"
+        android:layout_height="211dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044"
-        tools:src="@drawable/cripto" />
+        app:layout_constraintVertical_bias="0.118"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/cryptolottie" />
 
     <TextView
         android:id="@+id/details_crypto_code"
@@ -37,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"></TextView>
+        app:layout_constraintVertical_bias="0.578"></TextView>
 
     <TextView
         android:id="@+id/details_crypto_changeDay"
@@ -53,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.748"></TextView>
+        app:layout_constraintVertical_bias="0.725"></TextView>
 
     <TextView
         android:id="@+id/details_crypto_changeWeek"
@@ -69,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.819"></TextView>
+        app:layout_constraintVertical_bias="0.793"></TextView>
 
     <TextView
         android:id="@+id/detailsCryptoName"
@@ -84,8 +82,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529"></TextView>
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 
     <TextView
         android:id="@+id/changeHours"
@@ -101,6 +98,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673"></TextView>
+        app:layout_constraintVertical_bias="0.652"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
