@@ -25,10 +25,8 @@ class MainViewModel @Inject constructor(private val repository: Repository,appli
             val response=repository.remote.getGoldPrices()
             if(response.isSuccessful){
                 goldPriceList.postValue(response.body())
-                Log.d("viewmodel2","" +response.body())
-            }
-            else{
-                Log.d("viewmodel","data not found")
+            }else{
+                Log.d("mainviewModel","No data ")
             }
         }
     }

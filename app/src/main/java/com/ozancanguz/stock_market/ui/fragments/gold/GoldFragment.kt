@@ -26,6 +26,7 @@ class GoldFragment : Fragment() {
 
     private val binding get() = _binding!!
     private lateinit var auth: FirebaseAuth
+
     private val mainViewModel:MainViewModel by viewModels()
     private val goldListAdapter=GoldListAdapter()
 
