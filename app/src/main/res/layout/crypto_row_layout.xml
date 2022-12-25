@@ -25,47 +25,49 @@
             android:layout_height="146dp"
             android:background="@color/bluegreen">
 
-            <ImageView
-                android:id="@+id/crypto_img"
-                android:layout_width="200dp"
-                android:layout_height="0dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/cripto"
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="164dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/crypto_name"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.407"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/graph4" />
 
             <TextView
                 android:id="@+id/crypto_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="12dp"
+                android:layout_width="148dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="48dp"
                 android:ellipsize="end"
                 android:gravity="center"
                 android:textColor="@color/darker"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/crypto_img"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-
                 android:id="@+id/crypto_price"
-                android:layout_width="0dp"
+
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="64dp"
                 android:gravity="center"
-                android:text="TextView"
+                android:text="Current Price:"
                 android:textColor="@color/darker"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/crypto_img"
-                app:layout_constraintTop_toBottomOf="@+id/crypto_name" />
+                app:layout_constraintTop_toBottomOf="@+id/crypto_name"
+                app:layout_constraintVertical_bias="0.4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

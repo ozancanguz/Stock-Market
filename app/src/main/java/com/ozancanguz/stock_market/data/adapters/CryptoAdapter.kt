@@ -31,7 +31,7 @@ class CryptoAdapter:RecyclerView.Adapter<CryptoAdapter.CrytoViewHolder>() {
 
     override fun onBindViewHolder(holder: CrytoViewHolder, position: Int) {
         val currentCrypto=cryptoList[position]
-        holder.itemView.crypto_img.setImageResource(R.drawable.cryptoimg)
+
         holder.itemView.crypto_name.text=currentCrypto.name
         holder.itemView.crypto_price.text="Current Price:" +currentCrypto.pricestr+ " USD"
 
