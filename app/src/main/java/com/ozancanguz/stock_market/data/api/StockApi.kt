@@ -4,6 +4,7 @@ import com.ozancanguz.stock_market.data.model.crpto.Crypto
 import com.ozancanguz.stock_market.data.model.gold.Gold
 import com.ozancanguz.stock_market.data.model.parity.Parity
 import com.ozancanguz.stock_market.data.model.stock.Stock
+import com.ozancanguz.stock_market.data.model.ware.Ware
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Headers
@@ -44,6 +45,15 @@ interface StockApi {
     )
     @GET("parite")
     suspend fun getParityPrices(): Response<Parity>
+
+
+    // get ware data
+    @Headers(
+        "authorization: apikey 4S9qz1vJllFEUXdg2X6UxT:00p5DeCL7r6zj9xXkIoKmw",
+        "content-type: application/json"
+    )
+    @GET("emtia")
+    suspend fun getWarePrices(): Response<Ware>
 
 
 }
