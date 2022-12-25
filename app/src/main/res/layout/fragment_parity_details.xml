@@ -9,8 +9,8 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="328dp"
-        android:layout_height="211dp"
+        android:layout_width="342dp"
+        android:layout_height="212dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.118"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/mavigrpah" />
+        app:lottie_rawRes="@raw/parity111" />
 
     <TextView
         android:id="@+id/detailsParityText"
@@ -28,14 +28,14 @@
         android:layout_marginEnd="12dp"
         android:gravity="center"
         android:text="Description"
-        android:textSize="20sp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.578"></TextView>
+        app:layout_constraintVertical_bias="0.557"></TextView>
 
     <TextView
         android:id="@+id/detailsParitySelling"
@@ -45,14 +45,14 @@
         android:layout_marginEnd="12dp"
         android:gravity="center"
         android:text="Description"
-        android:textSize="20sp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.725"></TextView>
+        app:layout_constraintVertical_bias="0.699"></TextView>
 
     <TextView
         android:id="@+id/detailsParityRate"
@@ -61,15 +61,16 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:gravity="center"
-        android:textColor="@color/white"
         android:text="Description"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793"></TextView>
+        app:layout_constraintVertical_bias="0.765"></TextView>
 
     <TextView
         android:id="@+id/detail_parityName"
@@ -79,13 +80,14 @@
         android:layout_marginEnd="12dp"
         android:gravity="center"
         android:text="Description"
-        android:textSize="20sp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484"></TextView>
 
     <TextView
         android:id="@+id/detailsParityBuying"
@@ -100,9 +102,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652"></TextView>
+        app:layout_constraintVertical_bias="0.628"></TextView>
 
     <TextView
         android:id="@+id/detailsParityDateTime"
@@ -117,8 +120,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.878"></TextView>
+        app:layout_constraintVertical_bias="0.845"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

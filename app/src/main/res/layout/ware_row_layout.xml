@@ -38,7 +38,7 @@
                 app:layout_constraintVertical_bias="0.407"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                app:lottie_rawRes="@raw/graph3" />
+                app:lottie_rawRes="@raw/ware111" />
 
             <TextView
                 android:id="@+id/ware_name"

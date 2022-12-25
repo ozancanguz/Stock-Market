@@ -1,11 +1,14 @@
 package com.ozancanguz.stock_market
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 
 import androidx.navigation.ui.AppBarConfiguration
 
@@ -15,6 +18,7 @@ import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.ozancanguz.stock_market.ui.login.LoginActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -51,5 +55,25 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.signoutmenu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
 
-}
+
+        override fun onOptionsItemSelected(item: MenuItem): Boolean {
+            if(item.itemId==R.id.signOutMenuu){
+                auth.signOut()
+              val intent= Intent(this,LoginActivity::class.java)
+                startActivity(intent)
+
+
+            }
+            return super.onOptionsItemSelected(item)
+        }
+
+
+    }
+
+
+

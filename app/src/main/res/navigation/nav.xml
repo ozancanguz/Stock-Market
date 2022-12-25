@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_stockFragment_to_stockDetails"
             app:destination="@id/stockDetails" />
+        <action
+            android:id="@+id/action_stockFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/parityFragment"
@@ -37,6 +40,9 @@
         <action
             android:id="@+id/action_parityFragment_to_parityDetails"
             app:destination="@id/parityDetails" />
+        <action
+            android:id="@+id/action_parityFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/wareFragment"
@@ -46,6 +52,9 @@
         <action
             android:id="@+id/action_wareFragment_to_wareDetails"
             app:destination="@id/wareDetails" />
+        <action
+            android:id="@+id/action_wareFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/cryptoFragment"
@@ -55,6 +64,9 @@
         <action
             android:id="@+id/action_cryptoFragment_to_cryptoDetails"
             app:destination="@id/cryptoDetails" />
+        <action
+            android:id="@+id/action_cryptoFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <activity
         android:id="@+id/loginActivity"

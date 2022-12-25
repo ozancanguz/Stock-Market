@@ -35,7 +35,7 @@ class StockDetails : Fragment() {
     private fun updateUi() {
         val args=args.currentStock
         binding.detailsStockText.text=args.text
-        binding.detailsStockHacim.text="Hacim: " +args.hacimstr+ " TRY"
+        binding.detailsStockHacim.text="Volume: " +args.hacimstr+ " TRY"
         binding.detailsStockMaxx.text="Max Price: "+args.maxstr +" TRY"
         binding.detailsStockMin.text="Min Price: " +args.minstr +" TRY"
         binding.detailsStockRate.text="Rate: % "+args.rate.toString()

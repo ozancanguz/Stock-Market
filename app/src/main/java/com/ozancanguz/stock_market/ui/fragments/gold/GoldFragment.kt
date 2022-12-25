@@ -42,7 +42,7 @@ class GoldFragment : Fragment() {
         // Initialize Firebase Auth
         auth = Firebase.auth
 
-        setHasOptionsMenu(true)
+
 
         // setup rv
         setupRv()
@@ -66,23 +66,9 @@ class GoldFragment : Fragment() {
     }
 
 
-    // create menu
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.signoutmenu,menu)
-        super.onCreateOptionsMenu(menu, inflater)
-    }
 
 
-    // menu onclick listener
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId==R.id.signOutMenuu){
-            auth.signOut()
-            findNavController().navigate(R.id.action_goldFragment_to_loginActivity)
-            Toast.makeText(requireContext(),"Succesfully signout",Toast.LENGTH_LONG).show()
-            
-        }
-        return super.onOptionsItemSelected(item)
-    }
+
 
 
 }
