@@ -8,8 +8,7 @@ data class Result(
     val changeDay: Double,
     @SerializedName("changeDaystr")
     val changeDaystr: String,
-    @SerializedName("changeHour")
-    val changeHour: Int,
+
     @SerializedName("changeHourstr")
     val changeHourstr: String,
     @SerializedName("changeWeek")
