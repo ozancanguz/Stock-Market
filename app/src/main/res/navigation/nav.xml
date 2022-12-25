@@ -39,7 +39,11 @@
         android:id="@+id/cryptoFragment"
         android:name="com.ozancanguz.stock_market.ui.fragments.crypto.CryptoFragment"
         android:label="Crypto"
-        tools:layout="@layout/fragment_crypto" />
+        tools:layout="@layout/fragment_crypto" >
+        <action
+            android:id="@+id/action_cryptoFragment_to_cryptoDetails"
+            app:destination="@id/cryptoDetails" />
+    </fragment>
     <activity
         android:id="@+id/loginActivity"
         android:name="com.ozancanguz.stock_market.ui.login.LoginActivity"
@@ -53,5 +57,17 @@
         <argument
             android:name="currentgold"
             app:argType="com.ozancanguz.stock_market.data.model.gold.Result" />
+    </fragment>
+    <fragment
+        android:id="@+id/cryptoDetails"
+        android:name="com.ozancanguz.stock_market.ui.fragments.crypto.CryptoDetails"
+        android:label="Crypto Details"
+        tools:layout="@layout/fragment_crypto_details" >
+        <action
+            android:id="@+id/action_cryptoDetails_to_cryptoFragment"
+            app:destination="@id/cryptoFragment" />
+        <argument
+            android:name="currentCrypto"
+            app:argType="com.ozancanguz.stock_market.data.model.crpto.Result" />
     </fragment>
 </navigation>

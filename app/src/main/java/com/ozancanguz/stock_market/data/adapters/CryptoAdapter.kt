@@ -3,10 +3,12 @@ package com.ozancanguz.stock_market.data.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.stock_market.R
 import com.ozancanguz.stock_market.data.model.crpto.Crypto
 import com.ozancanguz.stock_market.data.model.crpto.Result
+import com.ozancanguz.stock_market.ui.fragments.crypto.CryptoFragmentDirections
 import kotlinx.android.synthetic.main.crypto_row_layout.view.*
 
 class CryptoAdapter:RecyclerView.Adapter<CryptoAdapter.CrytoViewHolder>() {
@@ -32,6 +34,12 @@ class CryptoAdapter:RecyclerView.Adapter<CryptoAdapter.CrytoViewHolder>() {
         holder.itemView.crypto_img.setImageResource(R.drawable.cryptoimg)
         holder.itemView.crypto_name.text=currentCrypto.name
         holder.itemView.crypto_price.text="Current Price:" +currentCrypto.pricestr+ " USD"
+
+        holder.itemView.setOnClickListener {
+            val direction=CryptoFragmentDirections.actionCryptoFragmentToCryptoDetails(currentCrypto)
+            holder.itemView.findNavController().navigate(direction)
+        }
+
     }
 
     override fun getItemCount(): Int {

@@ -5,25 +5,26 @@
     android:id="@+id/GoldDetailseLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.gold.GoldDetails">
+    android:background="@color/bluegreen"
+    tools:context=".ui.fragments.crypto.CryptoDetails">
 
 
     <ImageView
-        android:id="@+id/details_image"
-        android:layout_width="385dp"
-        android:layout_height="266dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/details_crypto_img"
+        android:layout_width="399dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="4dp"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.044"
+        tools:src="@drawable/cripto" />
 
     <TextView
-        android:id="@+id/details_buting"
+        android:id="@+id/details_crypto_code"
         android:layout_width="345dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -36,10 +37,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597"></TextView>
+        app:layout_constraintVertical_bias="0.6"></TextView>
 
     <TextView
-        android:id="@+id/details_selling"
+        android:id="@+id/details_crypto_changeDay"
         android:layout_width="345dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -52,10 +53,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704"></TextView>
+        app:layout_constraintVertical_bias="0.748"></TextView>
 
     <TextView
-        android:id="@+id/details_DateTime"
+        android:id="@+id/details_crypto_changeWeek"
         android:layout_width="345dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -68,6 +69,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814"></TextView>
+        app:layout_constraintVertical_bias="0.819"></TextView>
+
+    <TextView
+        android:id="@+id/detailsCryptoName"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="Description"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529"></TextView>
+
+    <TextView
+        android:id="@+id/changeHours"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="Description"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
