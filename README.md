@@ -23,4 +23,5 @@ crypto,stock,parity and ware price list and all the details we need.
 - MVVM
 
 ![stock market 11](https://user-images.githubusercontent.com/64928807/209528138-fc07441b-0786-42b8-a91a-09d2439bef47.gif)
+![stock market 2](https://user-images.githubusercontent.com/64928807/209528269-543e9d09-cd63-4713-bacd-644e296825dc.gif)
 
